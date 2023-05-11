@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User Details</title>
+</head>
+<body>
+<h1>User Information</h1>
+<p>Name: <span th:text="${user.name}"></span></p>
+<a th:href="@{/users/{id}(id=${user.id})}" class="btn btn-primary">View api Details</a>
+
+</body>
+</html>
